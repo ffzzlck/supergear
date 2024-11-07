@@ -5,7 +5,7 @@ import { config } from "../../config";
 
 const CheckoutBtn = ({ products }: { products: ProductProps[] }) => {
   const { currentUser } = store();
-  const publishableKey = "";
+  const publishableKey = "pk_test_51QIYWZInRYOE0s0o15Nn5ucg7OBfHIm0HGBzXg8G7oprsRZiDbClsl0yNZkcYHUYR8EgtcEwpVlVA4RpkkJq6Sl100aaLiQQtE";
   const stripePromise = loadStripe(publishableKey);
 
   const handleCheckout = async () => {

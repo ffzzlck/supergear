@@ -4,11 +4,11 @@ interface Config {
 const checkConfig = (server: string): Config | {} => {
   let config: Config | {} = {};
   switch (server) {
-    case "production":
-      config = {
-        baseUrl: "https://supergearyt.vercel.app/",
-      };
-      break;
+    // case "production":
+    //   config = {
+    //     baseUrl: "https://supergearyt.vercel.app/",
+    //   };
+    //   break;
     case "local":
       config = {
         baseUrl: "http://localhost:8000",
@@ -20,5 +20,5 @@ const checkConfig = (server: string): Config | {} => {
   return config;
 };
 
-export const selectServer = "production";
+export const selectServer = "local";
 export const config = checkConfig(selectServer) as Config;

@@ -29,7 +29,7 @@ router.post("/checkout", async (req, res) => {
       line_items: extractingItems,
       mode: "payment",
       success_url:
-        "http://localhost:5173/success?session_id={CHECKOUT_SESSION_ID}",
+        "http://localhost:5173/success",
       cancel_url: "http://localhost:5173/cancel",
       metadata: {
         email,
